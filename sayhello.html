@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Say Hello</title>
+</head>
+<body>
+
+<h1>This page says hello </h1>
+<h2>This page says hello </h2>
+<h3>This page says hello </h3>
+<h4>This page says hello </h4>
+<h5>This page says hello </h5>
+<h6>This page says hello </h6>
+<br>
+<br>
+<br>
+<p id="p1"><i>
+    In brightest day, in blackest night, no evil shall escape my sight. Let those who worship evil's might beware my power Green Lantern's light!
+</i>
+</p>
+<p id="p2"><i>
+    -Hal
+</i></p>
+  <label for="fname">What is your name?</label><br>
+  <input type="text" id="fname"><br>
+  <button onclick="sayhellotouser()">SayHello</button><br><br>
+  <br>
+ <h1 id="hellomsg"></h>
+ <br>
+<a href="index.html">Go back to home page</a>
+<script>
+ function sayhellotouser()
+ {
+    var uname;
+    var anyoftheinitialized;
+    uname = document.getElementById("fname").value;
+    document.getElementById("hellomsg").innerHTML = 'Hello, '+uname +' the lantern';
+    document.getElementById("fname").value='';
+    
+ }
+
+</script>
+</body>
+</html>
